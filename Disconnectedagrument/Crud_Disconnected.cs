@@ -38,7 +38,7 @@ namespace Disconnectedagrument
                 Console.WriteLine("-------------");
                 da = new SqlDataAdapter("select *from shippers", con);
                 da.Fill(ds, "Northwindshipper");
-                dt = ds.Tables["Northwindshipper"];
+                dt = ds.Tables["Northwindshipper"];//northwind database//
                 foreach (DataRow row in dt.Rows)
                 {
                     foreach (DataColumn col in dt.Columns)
